@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="tekst" />
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="icon" href="favicon.ico">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="sign">
+            <div id="signupd">
+                <input type="email" id="email">
+                <input type="password" id="password">
+                <button id="signup">sign up</button>
+            </div>
+            <div id="signind">
+                <input type="email" id="email2">
+                <input type="password" id="password2">
+                <button id="signin">sign in</button>
+            </div>
+        </div>
+        <div id="box">
+        <input type="text" id="blogbericht">
+        <button id="saveblogpost">+</button>
+            <div id="blogposts">
+            
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCmcDwVdfWcqEpNiddKwbKt-C6A3luoDcU",
+            authDomain: "labo-5-12d4d.firebaseapp.com",
+            databaseURL: "https://labo-5-12d4d.firebaseio.com",
+            projectId: "labo-5-12d4d",
+            storageBucket: "labo-5-12d4d.appspot.com",
+            messagingSenderId: "389761192598"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="js/main.js"></script>
+
+    <script src="js/libs/jquery-2.1.4.min.js"></script>
+</body>
+
+</html>
