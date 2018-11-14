@@ -1,28 +1,180 @@
-	
-	.box__news{
-		padding: 20px; margin: 10px;
-	}
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900|Montserrat:300,500,600,900|Roboto:300,500,900');
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+#sign div{
+    width: 100%;
+    border: 15px solid #76e27b;
+    padding: 40px;
+    height: 50vh;
+    background: white;
+}
+#signupd{
+    margin-right: 10%;
 
+}
+html{
+background: #76e27b;
+}
+#blogtitle, #blogtitle span{
+    font-size: 17em;
+    float: left;
+    width: 50%;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 900;
+    padding: 20px;
+    text-transform: uppercase;
+    margin-top: 50%;
+    transform: translateY(-110%);
+    color: white;
+    background: #76e27b;
+}
+#blogtitle:before{
+    content: "";
+    width: 250px;
+    height: 30px;
+    background: white;
+    position: absolute;
+    top: 570px;
+}
+#sign{
+    float: left;
+    width: 50%;
+}
 
-	.box__news:after{
-		content: '';
-		width: 0; 
-	height: 0; 
-	border-top: 60px solid transparent;
-	border-bottom: 60px solid transparent;
-	
-	border-left: 60px solid green;
-	}
+h1{
+    text-transform: uppercase;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1em;
+    letter-spacing: 13px;
+    color: #76e27b;
+    margin-bottom: 15px;
+}
+#sign div input{
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    border: 1px solid lightgrey;
+    height: 40px;
+    padding: 5px;
+}
 
+button{
+    padding: 10px 30px;
+    background: #76e27b;
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+}
+.white{
+    color: white;
+    width: 1000px;
+    margin: 20px auto;
+}
+.blogpost{
+    background: white;
+    padding: 30px;
+    width: 1000px;
+    margin: 20px auto;
+    line-height: 2em
+}
+#blogform{
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 230px;
+}
+#blogform2{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: #76e27b;
+    top: 0;
+    left: 0;
+    padding: 20%;
+    
+}
+h2{
+    margin: 30px 0;
+    font-size: 2em;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 13px;
+}
+textarea{
+    width: 100%;
+    border: none;
+}
+#saveblogpost{
+    border: 3px solid white;
+    padding: 10px 30px;
+    float: right;
+}
+#title, #title2{
+    background: white;
+    border: none;
+    width: 100%;
+    height: 40px;
+    font-size: 1.4em;
+    padding: 10px;
+    color: darkgrey;
+    margin-bottom: 20px;
+}
+.title{
+    font-size: 2em;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.blogpost{
+    position: relative;
+}
+.remove{
+    float: right;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
 
-
-
-	.box__news--red{ 
-		
-		background: red;
-	}
-
-	.box__news--blue{ 
-		
-		background: blue; padding: 30px;-
-	}
+#logout{
+    border: 2px solid white;
+}
+#forgot{
+    text-decoration: underline;
+    display: block;
+    cursor: pointer;
+}
+#passforgot{
+    width: 100%;
+    position: fixed;
+    height: 100vh;
+    background: white;
+    left: 100%;
+    transition: all 0.3s ease;
+}
+#passforgot input, #passforgot button, #titlepass{
+    display: block;
+    margin-left: 30%;
+    margin-top: 5px;
+}
+#passforgot #titlepass{
+    
+    margin-top: 20%;
+}
+#passforgot input{
+    padding: 20px;
+    width: 40%;
+}
+.edit{
+    text-decoration: underline;
+    cursor: pointer;
+    
+}

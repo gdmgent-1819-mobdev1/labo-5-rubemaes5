@@ -7,35 +7,58 @@
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="ckeditor/ckeditor.js"></script>
     <link rel="icon" href="favicon.ico">
 
 </head>
 
 <body>
     <div class="wrapper">
+        <div id="blogtitle">BLO GGR</div>
         <div id="sign">
             <div id="signupd">
-                <input type="email" id="email">
-                <input type="password" id="password">
+                <h1>Sign UP</h1>
+                <input type="email" id="email" placeholder="email">
+                <input type="password" id="password" placeholder="password">
                 <button id="signup">sign up</button>
             </div>
             <div id="signind">
-                <input type="email" id="email2">
-                <input type="password" id="password2">
-                <button id="signin">sign in</button>
+                <h1>Log IN</h1>
+                <input type="email" id="email2" placeholder="email">
+                <input type="password" id="password2" placeholder="password">
+                <button id="signin">log in</button><br><br>
+                <p id="forgot">forgot password?</p>
             </div>
         </div>
+        <div id="passforgot">
+            <h1 id="titlepass">New password</h1>
+            <input type="email" placeholder="your email address" id="passemail">
+            <button id="forgotpassword" value="send">send new</button>
+        </div>
         <div id="box">
-        <input type="text" id="blogbericht">
-        <button id="saveblogpost">+</button>
-            <div id="blogposts">
+            <div>
+                <h1 class="white">Welcome: <span id="user"></span></h1>
+            </div>
             
+            <div id="blogform">
+                <h2>add a blogpost</h2> <br><br>
+                <input type="text" id="title" placeholder="title">
+                <textarea id="blogbericht" ></textarea>
+                <script>
+                CKEDITOR.replace('blogbericht');
+                </script>
+                <button id="saveblogpost">add blogpost</button>
+            </div>
+            <div id="blogposts">
+
             </div>
         </div>
 
     </div>
-
-
+    <div>
+        
+    </div>
+    <script src="https://cdn.ckeditor.com/ckeditor5/11.1.1/classic/ckeditor.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
     <script>
         // Initialize Firebase
